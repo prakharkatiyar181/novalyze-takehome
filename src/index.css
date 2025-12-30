@@ -4,6 +4,34 @@
   --color-complimentary: #506cff;
   --color-gray-background-light: #f7fafc;
   --color-gray-background-dark: #2d3748;
+
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+  --bg-header: #000000;
+  --text-primary: #ffffff;
+  --text-header: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: #374151;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-text: #ffffff;
+  --glass-icon-hover: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f9fafb;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e5e7eb;
+  --bg-header: #ffffff;
+  --text-primary: #111827;
+  --text-header: #111827;
+  --text-secondary: #4b5563;
+  --border-color: #e5e7eb;
+  --glass-bg: rgba(0, 0, 0, 0.05);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-text: #111827;
+  --glass-icon-hover: rgba(0, 0, 0, 0.1);
 }
 
 * {
