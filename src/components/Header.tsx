@@ -1,40 +1,43 @@
 'use client'
 
 import {
-    PopoverGroup
+  PopoverGroup
 } from '@headlessui/react'
 import Logo from '../img/logo.png'
+import '../styles/header.css'
 
 export default function Header() {
 
   return (
-    <header className="bg-black">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              alt="Novalyze logo"
-              src={Logo}
-              className="h-15 w-auto"
-            />
-          </a>
+    <header className="header-bg">
+      <nav aria-label="Global" className="header-nav">
+        <div className="header-logo-container">
+          <div className="header-logo-wrapper">
+            <a href="#">
+              <img
+                alt="Novalyze logo"
+                src={Logo}
+                className="header-logo"
+              />
+            </a>
+            <div className="header-underline" />
+          </div>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="header-menu">
 
-          <a href="/" className="text-sm/6 font-semibold text-secondary">
+          <a href="/" className="header-link">
             Home
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-secondary">
+          <a href="#" className="header-link">
             Marketplace
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-secondary">
+          <a href="#" className="header-link">
             Company
           </a>
         </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/login" className="text-sm/6 font-semibold text-secondary">
-            Log in <span aria-hidden="true">&rarr;</span>
+        <div className="header-login-container">
+          <a href="/login" className="header-login-btn">
+            Log In<span aria-hidden="true" style={{ paddingLeft: '5px' }}>&rarr;</span>
           </a>
         </div>
       </nav>
