@@ -45,7 +45,6 @@ const NeuralBackground: React.FC = () => {
             return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
         };
 
-
         let mouse = { x: -1000, y: -1000 };
         const handleMouseMove = (e: MouseEvent) => {
             mouse.x = e.clientX;
