@@ -3,7 +3,7 @@
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-primary);
+    background-color: transparent;
     transition: background-color 0.3s ease;
 }
 
